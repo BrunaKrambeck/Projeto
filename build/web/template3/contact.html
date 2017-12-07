@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Café com Sabor - Contato</title>
+        <link rel="shortcut icon" href="img/logo.jpg" type="image/x-icon" />
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css\bootstrap.min.css" rel ="stylesheet">
+        <link href= "style3.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="tagline-upper text-center text-heading text-shadow text-white mt-5 d-none d-lg-block">Café com Sabor</div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded py-lg-4">
+            <div class="container">
+                <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">Café com Sabor</a>
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="navbarResponsive" style="">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item active px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="template3.html">Cadastrar Empresa
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="cadastroProd.html">Cadastrar Produto</a>
+                        </li>
+                        <li class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="produto.html">Produtos</a>
+                        </li>
+                        <li class="nav-item px-lg-4">
+                            <a class="nav-link text-uppercase text-expanded" href="contact.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+
+            <div class="bg-faded p-4 my-4">
+                <hr class="divider">
+                <h2 class="text-center text-lg text-uppercase my-0">Contato
+
+                </h2>
+                <hr class="divider">
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="embed-responsive embed-responsive-16by9 map-container mb-4 mb-lg-0">
+                            <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3548.571871925405!2d-49.67238088494884!3d-27.20118968300425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1511619350021" width="600" height="450" frameborder="0" style="border:0" allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5 class="mb-0">Telefone:</h5>
+                        <div class="mb-4">(47)3525-9090</div>
+                        <h5 class="mb-0">Email:</h5>
+                        <div class="mb-4">
+                            <a href="mailto:cafecomsabor@cafecomsabor.com">cafecomsabor@cafecomsabor.com</a>
+                        </div>
+                        <h5 class="mb-0">Endereço:</h5>
+                        <div class="mb-4">
+                            Estrada da Boa Esperança
+                            <br>
+                            Fundo Canoas, Rio do Sul, Santa Catarina
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-faded p-4 my-4">
+                <hr class="divider">
+                <h2 class="text-center text-lg text-uppercase my-0">Cadastre sua Mensagem
+
+                </h2>
+                <hr class="divider">
+                <form>
+                    <div class="row">
+                        <div class="form-group col-lg-4">
+                            <label class="text-heading">Nome</label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label class="text-heading">Email</label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group col-lg-4">
+                            <label class="text-heading">Celular</label>
+                            <input type="tel" class="form-control">
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="form-group col-lg-12">
+                            <label class="text-heading">Menssagem</label>
+                            <textarea class="form-control" rows="6"></textarea>
+                        </div>
+                        <div class="form-group col-lg-12">
+                            <button type="submit" class="btn btn-secondary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+        <footer class="bg-faded text-center py-5">
+            <div class="container">
+                <p class="m-0">Copyright © Café com Sabor 2017</p>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="js/jquery.min.js"></script>
+        <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Zoom when clicked function for Google Map -->
+        <script>
+            $('.map-container').click(function () {
+                $(this).find('iframe').addClass('clicked')
+            }).mouseleave(function () {
+                $(this).find('iframe').removeClass('clicked')
+            });
+        </script>
+    </body>
+</html>
